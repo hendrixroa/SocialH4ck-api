@@ -30,11 +30,22 @@ http://localhost:8000/user/{iduser}
 
 Una vez instalado composer ir a la carpeta donde esta el package.json y correr el siguiente comando: $ composer install
 
-Luego de haber instalado el proyecto importar el .sql a mysql respectivamente donde estan las migraciones y algunas tablas llenas.
+Se debe renombrar el archivo .env.example a .env y modificar las variables correspondientes a los datos de la base de datos que se este utilizando ejemplo :
 
-y para ejecutar el proyecto en en la carpeta bon-voyage se debe ejecutar el siguiente comando :
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=h4ck
+DB_USERNAME=root
+DB_PASSWORD=root
 
-$ php artisan serve --host 0.0.0.0
+O bien utilizar la BD de su preferencia.
+
+Luego de haber instalado el proyecto se debe ejecutar el comando $ php artisan migrate , para correr debidamente las migraciones
+
+y para ejecutar el proyecto en la carpeta principal se debe ejecutar el siguiente comando :
+
+$ php artisan serve
 
 El mismo indicara por que puerto y host correra la aplicacion.
 
