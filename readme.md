@@ -33,10 +33,15 @@ Una vez instalado composer ir a la carpeta donde esta el package.json y correr e
 Se debe renombrar el archivo .env.example a .env y modificar las variables correspondientes a los datos de la base de datos que se este utilizando ejemplo :
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=h4ck
+
 DB_USERNAME=root
+
 DB_PASSWORD=root
 
 O bien utilizar la BD de su preferencia.
